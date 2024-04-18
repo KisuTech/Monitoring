@@ -1,0 +1,17 @@
+{
+	"ulid": "01HVR6TT90QG9R09EG30FSH28M",
+	"minTime": 1713380233961,
+	"maxTime": 1713384000000,
+	"stats": {
+		"numSamples": 76495,
+		"numSeries": 1370,
+		"numChunks": 1370
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01HVR6TT90QG9R09EG30FSH28M"
+		]
+	},
+	"version": 1
+}
