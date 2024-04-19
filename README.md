@@ -17,7 +17,7 @@
    $ start /w "" "Docker Desktop Installer.exe" install
    $ Start Docker Desktop
    
-## Program Setup   
+## Project Setup   
 1.<b> Write the yaml file for the prometheus with cadvisor and grafana</b>
    - cadvisor is running on port:"write your ip address here":8081
    - Prometheus is running on port:"write your ip address here":9090
@@ -106,7 +106,7 @@
    # Verify that the Docker Engine installation
        $ sudo docker run hello-world
    
-## Program Setup   
+## Project Setup   
 1.<b>Write the yaml file for the prometheus with Node-exporter and grafana</b>
    - Node is running on port:"write your ip address here":9100
    - Prometheus is running on port:"write your ip address here":9090
