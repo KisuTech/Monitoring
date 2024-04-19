@@ -123,6 +123,7 @@
    - Add the data Source as the Prometheus and give the Port as(http://"your ip":9090)
    - After Adding the data Source import the dashboard(Node-Exporter ID:1860)
    - Analyze the VM Resources.
+   - We can Monitor The VM Resources From Windows Grafana Dashboard using VM IP address and the correct Port{`VM ip_address:PORT_NO`}
    
 ## Setting up alerts
    <p>The AlertManager service is responsible for handling alerts sent by Prometheus server.
