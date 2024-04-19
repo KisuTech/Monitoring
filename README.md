@@ -1,4 +1,4 @@
-## Docker container monitoring usig Prometheus Exporter**
+## Docker container monitoring && Virutal machine Resource Monitoring usig Prometheus Exporter
 
 **This project sets up two Virtual Machines (VMs) with Ubuntu using VMware or VirtualBox.One VM will have Docker installed for running sample containers,while the other will be used for monitoring resources using Grafana and Prometheus exporters**
 
@@ -62,7 +62,7 @@
    
 ## Program Setup   
 1. Write the yaml file for the prometheus with Node-exporter and grafana
-   $ Node is running on port:"write your ip address here":8081
+   $ Node is running on port:"write your ip address here":9100
    $ Prometheus is running on port:"write your ip address here":9090
    $ grafana is running on the port:"write your ip address here":3000
    
