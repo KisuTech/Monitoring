@@ -53,7 +53,8 @@
      <li>Open `./grafana.ini`</li>
      <li>Add your SMTP server details and email addresses under the receivers section.</li>
      <li>Configure the SMTP server with your email provider's setting.</li>
-     <li>Add Email and Password to the Section(I choose `TemEmail` for temprory email{using this email loggin to `mailsaur`}).</li>
+     <li>Add Email and Password to the Section(I choose <a href="https://temp-mail.org/en/">`TemEmail`</a>for temprory email{using this email loggin to <a href="https://mailosaur.com/app">`mailsaur`</a>}).</li>
+      <li>In the inboxes click on SMTP and POP3 section and there we can obtain the username and password.</li>
       </ul>
 
 ## Condition For Altering
@@ -142,7 +143,8 @@
      <li>Open `./grafana.ini`</li>
      <li>Add your SMTP server details and email addresses under the receivers section.</li>
      <li>Configure the SMTP server with your email provider's setting.</li>
-     <li>Add Email and Password to the Section(I choose `TemEmail` for temprory email{using this email loggin to `mailsaur`}).</li>
+     <li>Add Email and Password to the Section(I choose <a href="https://temp-mail.org/en/">`TemEmail`</a>for temprory email{using this email loggin to <a href="https://mailosaur.com/app">`mailsaur`</a>}).</li>
+      <li>In the inboxes click on SMTP and POP3 section and there we can obtain the username and password.</li>
       </ul>
 
 ## Condition For Altering
