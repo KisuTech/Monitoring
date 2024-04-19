@@ -16,7 +16,7 @@
    $ Start Docker Desktop
    
 ## Program Setup   
-1. Write the yaml file for the prometheus with cadvisor and grafana
+<b> Write the yaml file for the prometheus with cadvisor and grafana</b>
    $ cadvisor is running on port:"write your ip address here":8081
    $ Prometheus is running on port:"write your ip address here":9090
    $ grafana is running on the port:"write your ip address here":3000
