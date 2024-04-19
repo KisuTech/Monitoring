@@ -41,7 +41,7 @@
       $ Save the file->Go to the Three dot of Cpu Analyzer->Goto more Section Add Altering Run the Query and set the threshold value above 60%
 
 ## VM-2 Setup (With Docker)   
-1. Install Docker on VM-1:(Windows)
+1. Install Docker on VM-2:(ubuntu)
    # Add Docker's official GPG key:
      $ sudo apt-get update
      $ sudo apt-get install ca-certificates curl
@@ -73,7 +73,7 @@
 4. Grafana Dashboard Monitoring
    $ Go to Grafana Dashboard on the port:3000(localhost:3000)
    $ Add the data Source as the Prometheus and give the Port as(http://"your ip":9090)
-   $ After Adding the data Source iport the dashboard(Node-Exporter ID:1860)
+   $ After Adding the data Source import the dashboard(Node-Exporter ID:1860)
    $ Analyze the VM Resources.
    
 ## Set up  alerts for Docker
