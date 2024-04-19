@@ -55,7 +55,28 @@
      <li>Configure the SMTP server with your email provider's setting.</li>
      <li>Add Email and Password to the Section(I choose `TemEmail` for temprory email{using this email loggin to `mailsaur`}).</li>
       </ul>
-    
+
+## Condition For Altering
+1.CPU usage above 80%
+
+   <b>steps</b>
+      <ul>
+      <li>Open the Grafana Dashboard after saving the monitoring file</li>
+      <li>go to the alert section and write the Query after changing{change builder->code}</li>
+      <li>run the Query{according to cpu} and analyze the graph</li>
+      <li>Add the Threshold condition above 80 and set the alerts</li>
+      <li>Go to the contact point and choose email/discord add the email or webhhod-url(discord) and test it.</li>
+      </ul>
+2.Container is Down
+
+   <b>steps</b>
+      <ul>
+      <li>Open the Grafana Dashboard after saving the monitoring file</li>
+      <li>go to the alert section and write the Query after changing{change builder->code}</li>
+      <li>run the Query{`time()-timestamp(container_last_seen{name="cadvisor"})`} and analyze the graph</li>
+      <li>Add the classic condition above 60 as diff()  and set the alerts</li>
+      <li>Go to the contact point and choose email/discord add the email or webhhod-url(discord) and test it.</li>
+      </ul>
 
 ## VM-2 Setup (With Docker)   
 1. Install Docker on VM-2:(ubuntu)
@@ -118,4 +139,27 @@
      <li>Configure the SMTP server with your email provider's setting.</li>
      <li>Add Email and Password to the Section(I choose `TemEmail` for temprory email{using this email loggin to `mailsaur`}).</li>
       </ul>
+
+## Condition For Altering
+1.CPU usage above 60%
+
+   <b>steps</b>
+      <ul>
+      <li>Open the Grafana Dashboard after saving the monitoring file</li>
+      <li>go to the alert section and write the Query after changing{change builder->code}</li>
+      <li>run the Query{according to cpu} and analyze the graph</li>
+      <li>Add the Threshold condition above 60 and set the alerts</li>
+      <li>Go to the contact point and choose email/discord add the email or webhhod-url(discord) and test it.</li>
+      </ul>
+2.Memory usage above 60%
+
+   <b>steps</b>
+      <ul>
+      <li>Open the Grafana Dashboard after saving the monitoring file</li>
+      <li>go to the alert section and write the Query after changing{change builder->code}</li>
+      <li>run the Query{according to memory} and analyze the graph</li>
+      <li>Add the Threshold condition above 60 and set the alerts</li>
+      <li>Go to the contact point and choose email/discord add the email or webhhod-url(discord) and test it.</li>
+      </ul>
 </form>
+
