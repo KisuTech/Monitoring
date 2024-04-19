@@ -1,4 +1,4 @@
-## Docker container monitoring && Virutal machine Resource Monitoring using Prometheus Exporter
+## Docker container and Virutal machine Monitoring using Prometheus
 
 **This project sets up two Virtual Machines (VMs) with Ubuntu using VMware or VirtualBox.One VM will have Docker installed for running sample containers,while the other will be used for monitoring system resources using Grafana and Prometheus exporters**
 
