@@ -19,9 +19,9 @@
    
 ## Project Setup   
 1.<b> Write the yaml file for the prometheus with cadvisor and grafana</b>
-   - cadvisor is running on port:"write your ip address here":8081
-   - Prometheus is running on port:"write your ip address here":9090
-   - grafana is running on the port:"write your ip address here":3000
+   - cadvisor is configured to run on port:"write your ip address here":8081
+   - Prometheus is configured to run on port:"write your ip address here":9090
+   - grafana is configured to run on the port:"write your ip address here":3000
    
 2.<b> Write Docker Compose file for the grafana,prometheus,cadviser</b>
    - Here the Prometheus is depend upon the cadvidor(Cadviser helps to analyze the docker container Resources)
@@ -29,7 +29,7 @@
 3.<b>Run containers using the `docker compose up` command.</b>
    
 4.<b>Grafana Dashboard Monitoring</b>
-   - Go to Grafana Dashboard on the port:3000(`localhost:3000`)
+   - Go to Grafana Dashboard on the port:3000(`http://"your ip":3000`)
    - Add the data Source as the Prometheus and give the Port as(`http://"your ip":9090`)
    - After Adding the data Source iport the dashboard(cadvisor Exporter ID:14282)
    - Analyze the Docker Conatainer Resources.
@@ -109,9 +109,9 @@
    
 ## Project Setup   
 1.<b>Write the yaml file for the prometheus with Node-exporter and grafana</b>
-   - Node is running on port:"write your ip address here":9100
-   - Prometheus is running on port:"write your ip address here":9090
-   - grafana is running on the port:"write your ip address here":3000
+   - Node is configured to runon port:"write your ip address here":9100
+   - Prometheus is configured to run on port:"write your ip address here":9090
+   - grafana is configured to run on the port:"write your ip address here":3000
    
 2.<b>Write Docker Compose file for the grafana,prometheus,cadviser</b>
    - Here the Prometheus is depend upon the Node-exporter(Node-exporter helps to analyze the VM Resources{cpu,memory})
