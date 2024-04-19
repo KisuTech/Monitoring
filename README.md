@@ -1,6 +1,6 @@
-**Docker container monitoring usig Prometheus Exporter**
+## Docker container monitoring usig Prometheus Exporter**
 
-# This project sets up two Virtual Machines (VMs) with Ubuntu using VMware or VirtualBox.One VM will have Docker installed for running sample containers,while the other will be used for monitoring resources using Grafana and Prometheus exporters
+**This project sets up two Virtual Machines (VMs) with Ubuntu using VMware or VirtualBox.One VM will have Docker installed for running sample containers,while the other will be used for monitoring resources using Grafana and Prometheus exporters**
 
 ## Prerequisites
 - VMware or VirtualBox installed
@@ -43,11 +43,12 @@
 ## VM-2 Setup (With Docker)   
 1. Install Docker on VM-2:(ubuntu)
    # Add Docker's official GPG key:
+      ``` Terminal
      $ sudo apt-get update
      $ sudo apt-get install ca-certificates curl
      $ sudo install -m 0755 -d /etc/apt/keyrings
      $ sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
-     $ sudo chmod a+r /etc/apt/keyrings/docker.asc
+     $ sudo chmod a+r /etc/apt/keyrings/docker.asc 
    # Add the repository to Apt sources:
      $ echo \
      "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
