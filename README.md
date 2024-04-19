@@ -62,20 +62,25 @@
    <b>steps</b>
       <ul>
       <li>Open the Grafana Dashboard after saving the monitoring file</li>
-      <li>go to the alert section and write the Query after changing{change builder->code}</li>
-      <li>run the Query{according to cpu} and analyze the graph</li>
+      <li>go to the alert tab in the pannel editor click add and write the Query after changing{change builder->code}</li>
+      <li>run the Query{appropriate CPU metric query} and analyze the graph</li>
       <li>Add the Threshold condition above 80 and set the alerts</li>
-      <li>Go to the contact point and choose email/discord add the email or webhhod-url(discord) and test it.</li>
+      <li> Specify the duration and evaluation interval for the conditio</li>
+      <li>Go to the contact point and select notification channel as email/discord add the email or webhhod-url(discord) and test it.</li>
+      <li>Save the Alert Rule and Exit</li>
       </ul>
 2.Container is Down
 
    <b>steps</b>
       <ul>
       <li>Open the Grafana Dashboard after saving the monitoring file</li>
-      <li>go to the alert section and write the Query after changing{change builder->code}</li>
-      <li>run the Query{`time()-timestamp(container_last_seen{name="cadvisor"})`} and analyze the graph</li>
-      <li>Add the classic condition above 60 as diff()  and set the alerts</li>
-      <li>Go to the contact point and choose email/discord add the email or webhhod-url(discord) and test it.</li>
+      <li>Open the panel menu of the container status panel and select "Edit"</li>
+      <li>Go to the "Alert" tab in the panel editor.Click "Add Condition" and configure the condition</li>
+      <li>Select the query that indicates the status of containers (e.g., "container_up").Operator: Choose "=" for equality.Threshold: Set the threshold value to 0 
+       to check if any container is down.</li>
+      <li>Specify the duration and evaluation interval for the condition</li>
+      <li>Go to the contact point and choose notification channel as email/discord add the email or webhhod-url(discord) and test it.</li>
+      <li>Save the alert rule and exit</li>
       </ul>
 
 ## VM-2 Setup (With Docker)   
@@ -144,22 +149,26 @@
 1.CPU usage above 60%
 
    <b>steps</b>
-      <ul>
+       <ul>
       <li>Open the Grafana Dashboard after saving the monitoring file</li>
-      <li>go to the alert section and write the Query after changing{change builder->code}</li>
-      <li>run the Query{according to cpu} and analyze the graph</li>
+      <li>go to the alert tab in the pannel editor click add and write the Query after changing{change builder->code}</li>
+      <li>run the Query{appropriate CPU metric query} and analyze the graph</li>
       <li>Add the Threshold condition above 60 and set the alerts</li>
-      <li>Go to the contact point and choose email/discord add the email or webhhod-url(discord) and test it.</li>
+      <li>Specify the duration and evaluation interval for the conditio</li>
+      <li>Go to the contact point and select notification channel as email/discord add the email or webhhod-url(discord) and test it.</li>
+      <li>Save the Alert Rule and Exit</li>
       </ul>
 2.Memory usage above 60%
 
    <b>steps</b>
-      <ul>
+       <ul>
       <li>Open the Grafana Dashboard after saving the monitoring file</li>
-      <li>go to the alert section and write the Query after changing{change builder->code}</li>
-      <li>run the Query{according to memory} and analyze the graph</li>
+      <li>go to the alert tab in the pannel editor click add and write the Query after changing{change builder->code}</li>
+      <li>run the Query{appropriate Memory metric query} and analyze the graph</li>
       <li>Add the Threshold condition above 60 and set the alerts</li>
-      <li>Go to the contact point and choose email/discord add the email or webhhod-url(discord) and test it.</li>
+      <li>Specify the duration and evaluation interval for the conditio</li>
+      <li>Go to the contact point and select notification channel as email/discord add the email or webhhod-url(discord) and test it.</li>
+      <li>Save the Alert Rule and Exit</li>
       </ul>
 </form>
 
