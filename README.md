@@ -1,3 +1,5 @@
+<form>
+   
 ## Docker container and Virutal machine Monitoring using Prometheus
 
 **This project sets up two Virtual Machines (VMs) with Ubuntu using VMware or VirtualBox.One VM will have Docker installed for running sample containers,while the other will be used for monitoring system resources using Grafana and Prometheus exporters**
@@ -32,17 +34,28 @@
    - After Adding the data Source iport the dashboard(cadvisor Exporter ID:14282)
    - Analyze the Docker Conatainer Resources.
    
-## Set up  alerts for Docker
-   1.If Container is down
-      $ Save the file
-      $ Goto The alert
-      $ Go the code section
-      $ write the "Query(time()-timestamp(container_last_seen{name="task-node_exporter-1"}))"
-      $Go to the 
-   2.If Cpu uses is More Than 60%
-      $ Save the file
-      $ Go to the Three dot of Cpu Analyzer
-      $ Goto more Section Add Altering Run the Query and set the threshold value above 60%
+## Setting up alerts
+   <p>The AlertManager service is responsible for handling alerts sent by Prometheus server.
+      AlertManager can send notifications via email, Pushover, Slack, HipChat, Discord, or any other system that exposes a webhook interface.
+      A complete list of integrations can be found <a href="https://prometheus.io/docs/alerting/latest/configuration/">here</a>.</p>
+      
+1.<b>Discord Alerts</b>
+   <h4>To receive alerts via Discord, follow these steps:</h4>
+      <ul>
+     <li> Set up a custom integration by choosing incoming web hooks in your Discord server's settings.</li>
+     <li> Copy the Discord Webhook URL into the api_url field and specify a Discord channel.</li>
+     <li> Save the changes and restart the AlertManager service.</li>
+      </ul>
+     
+2.<b>Email Alerts</b>
+   <h4>To receive alerts via email, follow these steps:</h4>
+      <ul>
+     <li>Open `./grafana.ini`</li>
+     <li>Add your SMTP server details and email addresses under the receivers section.</li>
+     <li>Configure the SMTP server with your email provider's setting.</li>
+     <li>Add Email and Password to the Section(I choose `TemEmail` for temprory email{using this email loggin to `mailsaur`}).</li>
+      </ul>
+    
 
 ## VM-2 Setup (With Docker)   
 1. Install Docker on VM-2:(ubuntu)
@@ -84,17 +97,25 @@
    - After Adding the data Source import the dashboard(Node-Exporter ID:1860)
    - Analyze the VM Resources.
    
-## Set up  alerts for Docker
-   1.If Container is down
-      $ Save the file->Goto The alert->Go the code section->write the Query(time()-timestamp(container_last_seen{name="task-node_exporter-1"}))
-        ->
-      $Go to the 
-   2.If Cpu uses is More Than 60%
-      $ Save the file->Go to the Three dot of Cpu Analyzer->Goto more Section Add Altering Run the Query and set the threshold value above 60%
-   
+## Setting up alerts
+   <p>The AlertManager service is responsible for handling alerts sent by Prometheus server.
+      AlertManager can send notifications via email, Pushover, Slack, HipChat, Discord, or any other system that exposes a webhook interface.
+      A complete list of integrations can be found <a href="https://prometheus.io/docs/alerting/latest/configuration/">here</a>.</p>
       
-   
-
-
-
-
+1.<b>Discord Alerts</b>
+   <h4>To receive alerts via Discord, follow these steps:</h4>
+      <ul>
+     <li> Set up a custom integration by choosing incoming web hooks in your Discord server's settings.</li>
+     <li> Copy the Discord Webhook URL into the api_url field and specify a Discord channel.</li>
+     <li> Save the changes and restart the AlertManager service.</li>
+      </ul>
+     
+2.<b>Email Alerts</b>
+   <h4>To receive alerts via email, follow these steps:</h4>
+      <ul>
+     <li>Open `./grafana.ini`</li>
+     <li>Add your SMTP server details and email addresses under the receivers section.</li>
+     <li>Configure the SMTP server with your email provider's setting.</li>
+     <li>Add Email and Password to the Section(I choose `TemEmail` for temprory email{using this email loggin to `mailsaur`}).</li>
+      </ul>
+</form>
