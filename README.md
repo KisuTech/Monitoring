@@ -1,4 +1,4 @@
-## Docker container monitoring && Virutal machine Resource Monitoring usig Prometheus Exporter
+## Docker container monitoring && Virutal machine Resource Monitoring using Prometheus Exporter
 
 **This project sets up two Virtual Machines (VMs) with Ubuntu using VMware or VirtualBox.One VM will have Docker installed for running sample containers,while the other will be used for monitoring resources using Grafana and Prometheus exporters**
 
@@ -34,11 +34,15 @@
    
 ## Set up  alerts for Docker
    1.If Container is down
-      $ Save the file->Goto The alert->Go the code section->write the Query(time()-timestamp(container_last_seen{name="task-node_exporter-1"}))
-        ->
+      $ Save the file
+      $ Goto The alert
+      $ Go the code section
+      $ write the "Query(time()-timestamp(container_last_seen{name="task-node_exporter-1"}))"
       $Go to the 
    2.If Cpu uses is More Than 60%
-      $ Save the file->Go to the Three dot of Cpu Analyzer->Goto more Section Add Altering Run the Query and set the threshold value above 60%
+      $ Save the file
+      $ Go to the Three dot of Cpu Analyzer
+      $ Goto more Section Add Altering Run the Query and set the threshold value above 60%
 
 ## VM-2 Setup (With Docker)   
 1. Install Docker on VM-2:(ubuntu)
